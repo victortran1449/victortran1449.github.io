@@ -1,6 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hi this is Victor T from ACIT-3475</h1>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Rotator</title>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+
+
+	<script type = "text/javascript">
+	$(document).ready(function() {
+		$('.rotator').cycle({
+				fx: 'fade',
+				timeout: 2000		
+		});
+	});
+	</script>
+
+
+</head>
+<body>
+	<div class="rotator">
+		<img src="images/one.jpg" alt="First Image" />
+		<img src="images/two.jpg" alt="Second Image" />
+		<img src="images/three.jpg" alt="Third Image" />
+	</div>
+</body>
 </html>
